@@ -1,0 +1,165 @@
+:root {
+  --ff1: "Open Sans", sans-serif;
+  --ff2: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* ======================================= common css ends ======================================= */
+
+.open-r {
+  font-family: var(--ff1);
+  font-weight: 400;
+}
+
+.open-m {
+  font-family: var(--ff1);
+  font-weight: 500;
+}
+
+.open-b {
+  font-family: var(--ff1);
+  font-weight: 700;
+}
+
+.open-eb {
+  font-family: var(--ff1);
+  font-weight: 800;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.text-w {
+  color: #fff;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+/* ======================================= typography css ends ======================================= */
+
+#banner {
+  position: relative;
+}
+
+#banner .bannerText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 333;
+  width: 100%;
+  height: 560px;
+  background: rgba(34, 34, 34, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .slider-item {
+  height: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+#banner .banner1 {
+  background: url(../images/banner1.jpg) no-repeat center / cover;
+}
+
+#banner .banner2 {
+  background: url(../images/banner2.jpg) no-repeat center / cover;
+}
+
+#banner .banner3 {
+  background: url(../images/banner3.jpg) no-repeat center / cover;
+}
+
+/* ======================================= banner css ends ======================================= */
+
+#team {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+}
+
+#team .team {
+  display: flex;
+  justify-content: space-between;
+}
+
+#team .teamItem {
+  width: 350px;
+  height: 300px;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+#team .teamItem .teamImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+
+#team .teamItem:hover .teamImage {
+  left: -100%;
+}
+
+#team .teamItem .teamText {
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: all linear 0.4s;
+}
+
+#team .teamItem:hover .teamText {
+  right: 0;
+}
+
+/* ======================================= team css ends ======================================= */
